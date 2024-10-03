@@ -83,5 +83,21 @@ int** threeSum(int* nums, int numsSize, int* returnSize, int** returnColumnSizes
 
 int main(void)
 {
+    int** answer;
+    int* returnSize;
+    int* returnColumnSize;
+    int sample[] = {-1,0,1,2,-1,-4};
+
+    threeSum(sample, 6, &returnSize, &returnColumnSize);
+
+    /*
+    answer = malloc(sizeof(int*) * (*returnSize));
+
+    answer = threeSum(sample, 6, &returnSize, &returnColumnSize);
+
+    for(int i=0; i<returnSize; i++)
+    {
+        printf("%d <-> %d <-> %d\n", answer[i][0], answer[i][1],answer[i][2]);
+    }*/
     return 0;
 }
